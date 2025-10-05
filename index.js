@@ -14,7 +14,9 @@ for (let love of lovecount) {
 const callsbtn = document.getElementsByClassName("call-btn");
 for (let call of callsbtn) {
   call.addEventListener("click", function () {
-    const title = call.parentNode.parentNode.children[2].innerText;
+    const title = call.parentNode.parentNode.children[1].innerText;
+    
+    
     const nationalNumber = call.parentNode.parentNode.children[3].innerText;
     const coinsNumber = getelement("coin").innerText;
     if (coinsNumber >= 20) {
