@@ -27,19 +27,19 @@
           <div class="flex gap-5">
             <div>
               <h1 class="flex gap-1 bg-[#41ff6b1a] w-[100px] items-center justify-center py-2 rounded-full">
-              <span class="font-bold">0</span>
+              <span id="love-count" class="font-bold ">0</span>
               <img class="w-[30px]" src="./assets/heart.png" alt="">
             </h1>
             </div>
             <div>
               <h1 class="flex gap-1 bg-[#41ff6b1a] w-[100px] items-center justify-center py-2 rounded-full">
-              <span class="font-bold">100</span>
+              <span id="coin" class="font-bold">100</span>
               <img class="w-[30px]" src="./assets/coin.png" alt="">
             </h1>
             </div>
             <div>
               <h1 class="flex gap-1 bg-[#00a63e] w-[100px] items-center justify-center py-2 rounded-full font-bold text-white">
-              <span class="font-bold">0</span>
+              <span id="copy-count" class="font-bold">0</span>
               Copy
             </h1>
             </div>
@@ -50,7 +50,7 @@
     </section>
     <section>
         <div class="text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-8">
-          <div class="flex justify-center items-center ">
+          <div class=" w-42 text-white rounded-full mx-auto">
             <img src="./assets/logo.png" alt="">
           </div>
         <h1 class="font-bold text-2xl text-white py-5">Emergency Service Directory</h1>
@@ -63,24 +63,26 @@
         <section class="col-span-9">
           <div class="grid grid-cols-3 gap-5 my-14">
             <!-- cart - 1 -->
-            <div class="bg-white rounded-lg p-8 ">
+            <div class="bg-white rounded-lg p-8 shadow">
               <div class="flex justify-between items-center">
-                <img src="./assets/emergency.png" alt="">
-                <i class="fa-regular fa-heart "></i>
+                <img class="bg-[#ffe3e2] p-2 rounded-3xl" src="./assets/emergency.png" alt="">
+                <i  class="fa-regular fa-heart loves"></i>
               </div>
               <h1 class="font-bold text-xl py-3">National Emergency Number</h1>
               <p class="text-gray-400">National Emergency</p>
               <h1 class="font-bold text-2xl py-3">999</h1>
               <button class="btn rounded-full border-none ">All</button>
-              <div class="flex gap-2 justify-center pt-4">
-                <button class="btn text-gray-400 rounded-xl bg-white w-[130px]">
+              <div class="flex  gap-2 justify-center pt-4">
+                <button  class="copy-btn btn text-gray-400 rounded-xl bg-white w-[130px] hover:bg-black hover:text-white">
                   <i class="fa-solid fa-copy"></i>
                   Copy</button>
-                <button class=" btn text-white bg-[#00a63e] rounded-xl w-[130px]">
+                <button class=" call-btn btn text-white bg-[#00a63e] rounded-xl w-[130px]">
                   <i class="fa-solid fa-phone"></i>
                   Call</button>
               </div>
             </div>
+            
+            
             
             
           </div>
@@ -88,32 +90,22 @@
         </section>
         
         
-        <aside class="col-span-3  bg-white my-14">
+        <aside class="col-span-3  bg-white my-14 rounded-lg shadow">
           <div class="flex justify-between p-6 items-center ">
             <h1>
               <i class="fa-regular fa-clock font-bold"></i>
               Call History</h1>
-            <button class="btn border-none rounded-full bg-[#00a63e] text-white px-5">Clear</button>
-          </div>
+            <button id="call-clear" class="btn border-none rounded-full bg-[#00a63e] text-white px-5 hover:bg-slate-500">Clear</button>
+          </div> 
           <!-- call history container -->
-          <div class="call-history p-6">
-            <div class="flex justify-between items-center bg-[#fafafa] p-2 rounded-lg">
-              <div>
-                <h1 class="font-bold">title</h1>
-                <p class="text-gray-400">number</p>
-              </div>
-              <div>
-                time
-              </div>
-            </div>
+          <div id="call-history" class=" p-6 gap-9">
+            
 
           </div>
         </aside>
 
       </section>
     </main>
-    <footer>
-
-    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
